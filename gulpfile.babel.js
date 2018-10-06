@@ -1,7 +1,11 @@
+/* eslint-disable no-mixed-spaces-and-tabs */
 import gulp from "gulp";
 import cp from "child_process";
 import gutil from "gulp-util";
 import postcss from "gulp-postcss";
+import postcssCustomMedia from "postcss-custom-media";
+import postcssPresetEnv from "postcss-preset-env";
+import lintspaces from "gulp-lintspaces";
 import cssImport from "postcss-import";
 import cssnext from "postcss-cssnext";
 import BrowserSync from "browser-sync";
@@ -17,7 +21,7 @@ const hugoBin = `./bin/hugo.${process.platform === "win32" ? "exe" : process.pla
 const defaultArgs = ["-d", "../dist", "-s", "site"];
 
 if (process.env.DEBUG) {
-  defaultArgs.unshift("--debug")
+  defaultArgs.unshift("--debug");
 }
 
 gulp.task("hugo", (cb) => buildSite(cb));
@@ -25,16 +29,31 @@ gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture
 gulp.task("build", ["css", "js", "hugo"]);
 gulp.task("build-preview", ["css", "js", "hugo-preview"]);
 
+gulp.task("fonts", () => (
+  gulp.src(["./src/css/**/*",
+    "!./src/css/**/*.css"
+  ])
+    .pipe(gulp.dest("./dist/css"))
+    .pipe(browserSync.stream())
+));
+
+gulp.task("copy-js", () => (
+  gulp.src(["./src/js/**/*.js"])
+    .pipe(gulp.dest("./dist/js"))
+    .pipe(browserSync.stream())
+));
+
 gulp.task("css", () => (
-  gulp.src("./src/css/*.css")
+  gulp.src(["./src/css/**/*.css"])
     .pipe(postcss([
       cssImport({from: "./src/css/main.css"}),
-      cssnext(),
+      postcssPresetEnv(),
       cssnano(),
     ]))
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
+
 
 gulp.task("js", (cb) => {
   const myConfig = Object.assign({}, webpackConfig);
@@ -66,7 +85,7 @@ gulp.task("svg", () => {
     .pipe(gulp.dest("site/layouts/partials/"));
 });
 
-gulp.task("server", ["hugo", "css", "js", "svg"], () => {
+gulp.task("server", ["hugo", "fonts", "css", "copy-js", "js", "svg"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
