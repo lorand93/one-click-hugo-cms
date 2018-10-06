@@ -1,13 +1,9 @@
-/* eslint-disable no-mixed-spaces-and-tabs */
 import gulp from "gulp";
 import cp from "child_process";
 import gutil from "gulp-util";
 import postcss from "gulp-postcss";
-import postcssCustomMedia from "postcss-custom-media";
 import postcssPresetEnv from "postcss-preset-env";
-import lintspaces from "gulp-lintspaces";
 import cssImport from "postcss-import";
-import cssnext from "postcss-cssnext";
 import BrowserSync from "browser-sync";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
@@ -37,7 +33,7 @@ gulp.task("fonts", () => (
     .pipe(browserSync.stream())
 ));
 
-gulp.task("copy-js", () => (
+gulp.task("copyjs", () => (
   gulp.src(["./src/js/**/*.js"])
     .pipe(gulp.dest("./dist/js"))
     .pipe(browserSync.stream())
@@ -85,7 +81,7 @@ gulp.task("svg", () => {
     .pipe(gulp.dest("site/layouts/partials/"));
 });
 
-gulp.task("server", ["hugo", "fonts", "css", "copy-js", "js", "svg"], () => {
+gulp.task("server", ["hugo", "fonts", "css", "copyjs", "js", "svg"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
