@@ -15,21 +15,7 @@
 
 		</section><!-- #page-title end -->
 
-		<!-- Portfolio Single Gallery
-		============================================= -->
-		<section id="slider" class="slider-element slider-parallax swiper_wrapper clearfix" style="height: 600px;">
-
-			<div class="swiper-container swiper-parent">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide" style="background-image: url('/img/portfolio/extended/3.jpg');"></div>
-					<div class="swiper-slide" style="background-image: url('/img/portfolio/extended/1.jpg');"></div>
-					<div class="swiper-slide" style="background-image: url('/img/portfolio/extended/4.jpg');"></div>
-				</div>
-				<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
-				<div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
-			</div>
-
-		</section><!-- .portfolio-single-image end -->
+		<!--{{partial "slider-project-photo" .}}-->
 
 		<!-- Content
 		============================================= -->
@@ -57,95 +43,11 @@
 
 				</div>
 
-				<div class="section dark nomargin noborder" style="height: 550px;">
-					<div class="container-fluid vertical-middle center clearfix">
-						<i class="i-plain i-large icon-line-video divcenter" data-animate="fadeInDown"></i>
-						<div class="emphasis-title nomargin" data-animate="fadeInUp">
-							<h2 style="font-size: 56px;">Video or Photo from the event</h2>
-						</div>
-					</div>
-					<div class="video-wrap">
-						<video poster="/img/videos/explore.jpg" preload="auto" loop autoplay muted>
-							<source src='/img/videos/explore.mp4' type='video/mp4' />
-							<source src='/img/videos/explore.webm' type='video/webm' />
-						</video>
-						<div class="video-overlay"></div>
-					</div>
-				</div>
+				<!--{{partial "video-or-photo-inline" .}}-->
 
-				<div class="section dark notopmargin nobottommargin noborder" style="padding: 60px 0;background-color: #222;">
-					<div class="container-fluid clearfix">
+				<!--{{partial "food-waste-combat-counter" . }}-->
 
-						<div class="col_one_fifth nobottommargin center" data-animate="bounceIn">
-							<div class="counter counter-large" style="color: #3498db;"><span data-from="100" data-to="345" data-refresh-interval="20" data-speed="2000"></span></div>
-							<h5>Hours Spent</h5>
-						</div>
-
-						<div class="col_one_fifth nobottommargin center" data-animate="bounceIn" data-delay="200">
-							<div class="counter counter-large" style="color: #e74c3c;"><span data-from="10" data-to="116" data-refresh-interval="10" data-speed="2000"></span></div>
-							<h5>Colors Used</h5>
-						</div>
-
-						<div class="col_one_fifth nobottommargin center" data-animate="bounceIn" data-delay="400">
-							<div class="counter counter-large" style="color: #e67e22;"><span data-from="2" data-to="178" data-refresh-interval="13" data-speed="3000"></span></div>
-							<h5>Rough Logos Created</h5>
-						</div>
-
-						<div class="col_one_fifth nobottommargin center" data-animate="bounceIn" data-delay="600">
-							<div class="counter counter-large" style="color: #1abc9c;"><span data-from="50" data-to="1523" data-refresh-interval="25" data-speed="2500"></span></div>
-							<h5>Papers Trashed</h5>
-						</div>
-
-						<div class="col_one_fifth nobottommargin center col_last" data-animate="bounceIn" data-delay="800">
-							<div class="counter counter-large" style="color: #9b59b6;"><span data-from="50" data-to="469" data-refresh-interval="30" data-speed="2700"></span></div>
-							<h5>Cups of Coffee</h5>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="row nopadding common-height ohidden">
-					<div class="col-lg-6 col-padding" style="background: url('/img/portfolio/extended/thumbs/big.jpg') center center no-repeat; background-size: cover;">
-						<div>&nbsp;</div>
-					</div>
-					<div class="col-lg-6 col-padding">
-
-						<div>
-							<h3>Redesigned everything from the Scratch</h3>
-
-							<div class="row">
-								<div class="col-md-9 nopadding topmargin-sm clearfix">
-
-									<div class="feature-box fbox-outline fbox-light fbox-effect" data-animate="fadeIn">
-										<div class="fbox-icon">
-											<a href="#"><i class="icon-line-monitor"></i></a>
-										</div>
-										<h3>Responsive Layout</h3>
-										<p>Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
-									</div>
-
-									<div class="feature-box fbox-outline fbox-light fbox-effect topmargin" data-animate="fadeIn" data-delay="200">
-										<div class="fbox-icon">
-											<a href="#"><i class="icon-line-eye"></i></a>
-										</div>
-										<h3>Retina Ready Graphics</h3>
-										<p>Looks beautiful &amp; ultra-sharp on Retina Displays with Retina Icons, Fonts &amp; Images.</p>
-									</div>
-
-									<div class="feature-box fbox-outline fbox-light fbox-effect topmargin" data-animate="fadeIn" data-delay="400">
-										<div class="fbox-icon">
-											<a href="#"><i class="icon-line-layers"></i></a>
-										</div>
-										<h3>Powerful Performance</h3>
-										<p>Optimized code that are completely customizable and deliver unmatched fast performance.</p>
-									</div>
-
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
+				{{partial "project-item" .}}
 
 				<div class="clear"></div>
 
