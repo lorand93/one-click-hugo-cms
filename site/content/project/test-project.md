@@ -69,6 +69,7 @@ textCol2: |-
 showVideo: true
 videoPhoto:
   video: /img/small.mp4
+  title: test title
 showCounter: true
 counter:
   - counterColor: '#e3f9c4'
