@@ -4,6 +4,8 @@ showSlider: true
 textCol1: qweqweqwe
 textCol2: qweqweqwe
 showVideo: true
+videoPhoto:
+  video: /img/small.mp4
 showCounter: false
 counter:
   - counterColor: '#e3f9c4'
