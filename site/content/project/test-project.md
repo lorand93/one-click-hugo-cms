@@ -4,6 +4,7 @@ showSlider: true
 sliderImages:
   - /img/about-sustainable-farming.jpg
   - /img/about-single-origin.jpg
+  - /img/about-shade-grown.jpg
 useTwoColumns: false
 textCol1: >-
   # About About
