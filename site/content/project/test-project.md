@@ -3,7 +3,7 @@ title: Test project!
 showSlider: true
 sliderImages:
   - image: /img/about-direct-sourcing.jpg
-  - image: /img/about-direct-sourcing.jpg
+  - ''
   - /img/about-single-origin.jpg
 useTwoColumns: false
 textCol1: >-
