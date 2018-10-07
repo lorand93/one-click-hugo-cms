@@ -6,11 +6,14 @@ textCol2: qweqweqwe
 showVideo: true
 showCounter: false
 counter:
-  - counterText: Hours
+  - counterColor: '#e3f9c4'
+    counterText: Hours
     counterValue: '50'
-  - counterText: Energy
+  - counterColor: '#615eff'
+    counterText: Energy
     counterValue: '1000'
-  - counterText: Kilograms of Food
+  - counterColor: '#aa7942'
+    counterText: Kilograms of Food
     counterValue: '100'
 showTextPhotoSection: true
 textPhotoSection:
