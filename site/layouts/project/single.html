@@ -1,124 +1,137 @@
 {{ define "main" }}
 <body class="stretched">
 
-	<!-- Document Wrapper
-	============================================= -->
-	<div id="wrapper" class="clearfix">
+<!-- Document Wrapper
+============================================= -->
+<div id="wrapper" class="clearfix">
 
-		<!-- Page Title
-		============================================= -->
-		<section id="page-title">
+	<!-- Page Title
+	============================================= -->
+	<section id="page-title">
+
+		<div class="container clearfix">
+			<h1>{{ .Params.title}}</h1>
+		</div>
+
+	</section><!-- #page-title end -->
+
+	{{partial "slider-project-photo" .Params }}
+
+	<!-- Content
+	============================================= -->
+	<section id="content">
+
+		<div class="content-wrap">
 
 			<div class="container clearfix">
-				<h1>Project for Kids at school from Cluj-Napoca</h1>
+
+				<div class="col_half">
+
+					{{.Params.textCol1}}
+
+				</div>
+
+				<div class="col_half col_last">
+
+					<h3>Our Strategy</h3>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellendus adipisci laborum
+						placeat delectus labore cupiditate deserunt minus numquam consequatur esse, hic at earum illo
+						animi eaque et, dolorem quo qui eos? Quam rerum possimus maxime veniam aut ratione eveniet
+						aliquid cumque aspernatur ipsum libero quaerat, nam. Ad, sunt, error!</p>
+
+				</div>
+
 			</div>
 
-		</section><!-- #page-title end -->
+			{{partial "video-or-photo-inline" .}}
 
-		<!--{{partial "slider-project-photo" .}}-->
+			{{partial "food-waste-combat-counter" . }}
 
-		<!-- Content
-		============================================= -->
-		<section id="content">
+			{{partial "project-item-text-photo-details" .}}
 
-			<div class="content-wrap">
+			<div class="clear"></div>
 
+			<div class="section nomargin">
 				<div class="container clearfix">
-
-					<div class="col_half">
-
-						<h3>Work Required</h3>
-
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellendus adipisci laborum placeat delectus labore cupiditate deserunt minus numquam consequatur esse, hic at earum illo animi eaque et, dolorem quo qui eos? Quam rerum possimus maxime veniam aut ratione eveniet aliquid cumque aspernatur ipsum libero quaerat, nam. Ad, sunt, error!</p>
-
+					<div class="heading-block center nomargin">
+						<h3>Photos from the project</h3>
 					</div>
+				</div>
+			</div>
 
-					<div class="col_half col_last">
+			<div class="nomargin masonry-thumbs grid-4" data-lightbox="gallery">
+				<a href="/img/portfolio/extended/thumbs/1.jpg" data-lightbox="gallery-item"><img class="image_fade"
+																								 src="/img/portfolio/extended/thumbs/1.jpg"
+																								 alt="Gallery Thumb 1"></a>
+				<a href="/img/portfolio/extended/thumbs/2.jpg" data-lightbox="gallery-item"><img class="image_fade"
+																								 src="/img/portfolio/extended/thumbs/2.jpg"
+																								 alt="Gallery Thumb 2"></a>
+				<a href="/img/portfolio/extended/thumbs/3.jpg" data-lightbox="gallery-item"><img class="image_fade"
+																								 src="/img/portfolio/extended/thumbs/6.jpg"
+																								 alt="Gallery Thumb 3"></a>
+				<a href="/img/portfolio/extended/thumbs/4.jpg" data-lightbox="gallery-item"><img class="image_fade"
+																								 src="/img/portfolio/extended/thumbs/7.jpg"
+																								 alt="Gallery Thumb 4"></a>
+			</div>
 
-						<h3>Our Strategy</h3>
+			<div class="clear"></div>
 
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellendus adipisci laborum placeat delectus labore cupiditate deserunt minus numquam consequatur esse, hic at earum illo animi eaque et, dolorem quo qui eos? Quam rerum possimus maxime veniam aut ratione eveniet aliquid cumque aspernatur ipsum libero quaerat, nam. Ad, sunt, error!</p>
+			<div class="container topmargin-lg clearfix">
 
-					</div>
-
+				<div class="col_one_third">
+					<h4>Case Study</h4>
+					<p>Expedita similique fuga quae voluptatibus molestiae amet rem, veniam nihil, magni quo odit
+						ducimus ipsum suscipit ea aliquid alias cumque. Lorem ipsum dolor sit amet, consectetur
+						adipisicing elit. Pariatur modi eos maiores.</p>
 				</div>
 
-				<!--{{partial "video-or-photo-inline" .}}-->
+				<div class="col_one_third">
+					<h4>Author Experience</h4>
+					<p>Hic corporis modi tempora eligendi ipsa, odit voluptatum cupiditate perferendis architecto
+						repellat odio nam. Quas nesciunt voluptate, incidunt id dolorum corporis deleniti, sapiente a
+						ipsam molestias accusantium.</p>
+				</div>
 
-				<!--{{partial "food-waste-combat-counter" . }}-->
-
-				{{partial "project-item" .}}
-
-				<div class="clear"></div>
-
-				<div class="section nomargin">
-					<div class="container clearfix">
-						<div class="heading-block center nomargin">
-							<h3>Photos from the project</h3>
+				<div class="col_one_third col_last">
+					<h4>Like this Project?</h4>
+					<p>Take some time sharing this project for the well being of its development.</p>
+					<div class="si-share clearfix">
+						<span>Share:</span>
+						<div>
+							<a href="#" class="social-icon si-borderless si-facebook">
+								<i class="icon-facebook"></i>
+								<i class="icon-facebook"></i>
+							</a>
+							<a href="#" class="social-icon si-borderless si-twitter">
+								<i class="icon-twitter"></i>
+								<i class="icon-twitter"></i>
+							</a>
+							<a href="#" class="social-icon si-borderless si-pinterest">
+								<i class="icon-pinterest"></i>
+								<i class="icon-pinterest"></i>
+							</a>
+							<a href="#" class="social-icon si-borderless si-gplus">
+								<i class="icon-gplus"></i>
+								<i class="icon-gplus"></i>
+							</a>
+							<a href="#" class="social-icon si-borderless si-email3">
+								<i class="icon-email3"></i>
+								<i class="icon-email3"></i>
+							</a>
 						</div>
 					</div>
-				</div>
-
-				<div class="nomargin masonry-thumbs grid-4" data-lightbox="gallery">
-					<a href="/img/portfolio/extended/thumbs/1.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/extended/thumbs/1.jpg" alt="Gallery Thumb 1"></a>
-					<a href="/img/portfolio/extended/thumbs/2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/extended/thumbs/2.jpg" alt="Gallery Thumb 2"></a>
-					<a href="/img/portfolio/extended/thumbs/3.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/extended/thumbs/6.jpg" alt="Gallery Thumb 3"></a>
-					<a href="/img/portfolio/extended/thumbs/4.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/extended/thumbs/7.jpg" alt="Gallery Thumb 4"></a>
-				</div>
-
-				<div class="clear"></div>
-
-				<div class="container topmargin-lg clearfix">
-
-					<div class="col_one_third">
-						<h4>Case Study</h4>
-						<p>Expedita similique fuga quae voluptatibus molestiae amet rem, veniam nihil, magni quo odit ducimus ipsum suscipit ea aliquid alias cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur modi eos maiores.</p>
-					</div>
-
-					<div class="col_one_third">
-						<h4>Author Experience</h4>
-						<p>Hic corporis modi tempora eligendi ipsa, odit voluptatum cupiditate perferendis architecto repellat odio nam. Quas nesciunt voluptate, incidunt id dolorum corporis deleniti, sapiente a ipsam molestias accusantium.</p>
-					</div>
-
-					<div class="col_one_third col_last">
-						<h4>Like this Project?</h4>
-						<p>Take some time sharing this project for the well being of its development.</p>
-						<div class="si-share clearfix">
-							<span>Share:</span>
-							<div>
-								<a href="#" class="social-icon si-borderless si-facebook">
-									<i class="icon-facebook"></i>
-									<i class="icon-facebook"></i>
-								</a>
-								<a href="#" class="social-icon si-borderless si-twitter">
-									<i class="icon-twitter"></i>
-									<i class="icon-twitter"></i>
-								</a>
-								<a href="#" class="social-icon si-borderless si-pinterest">
-									<i class="icon-pinterest"></i>
-									<i class="icon-pinterest"></i>
-								</a>
-								<a href="#" class="social-icon si-borderless si-gplus">
-									<i class="icon-gplus"></i>
-									<i class="icon-gplus"></i>
-								</a>
-								<a href="#" class="social-icon si-borderless si-email3">
-									<i class="icon-email3"></i>
-									<i class="icon-email3"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-
 				</div>
 
 			</div>
 
-		</section><!-- #content end -->
+		</div>
 
-	</div><!-- #wrapper end -->
+	</section><!-- #content end -->
 
-	<!-- Go To Top
-	============================================= -->
-	<div id="gotoTop" class="icon-angle-up"></div>
+</div><!-- #wrapper end -->
+
+<!-- Go To Top
+============================================= -->
+<div id="gotoTop" class="icon-angle-up"></div>
 {{end}}
