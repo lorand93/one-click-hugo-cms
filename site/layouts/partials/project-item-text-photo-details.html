@@ -1,23 +1,28 @@
-<div class="row nopadding common-height ohidden flex-auto">
-    <div class="col col-padding"
-         style="background: url('/img/portfolio/extended/thumbs/big.jpg') center center no-repeat; background-size: cover;">
-        <div>&nbsp;</div>
-    </div>
-    <div class="col col-padding">
+test!!!!{{.}}
 
-        <div>
-            <div class="row">
-                <div class="col-md-9 nopadding topmargin-sm clearfix">
+{{ range .}}
 
-                    <div class="feature-box fbox-outline fbox-light fbox-effect" data-animate="fadeIn">
-                        <h3>Took every meal under the magnifying glass</h3>
-                        <p>Demo text lorem ipsum demo Demo text lorem ipsum demoDemo text lorem ipsum demoDemo text
-                            lorem ipsum demoDemo text lorem ipsum demoDemo text lorem ipsum demo</p>
-                    </div>
+<div class="row nopadding common-height ohidden flex-auto" style="{{ if .reverseOrder }}flex-flow:row-reverse; {{end}}">
+	<div class="col col-padding"
+		 style="background: url('/img/portfolio/extended/thumbs/big.jpg') center center no-repeat; background-size: cover;">
+		<div>&nbsp;</div>
+	</div>
+	<div class="col col-padding">
 
-                </div>
-            </div>
-        </div>
+		<div>
+			<div class="row">
+				<div class="col-md-9 nopadding topmargin-sm clearfix">
 
-    </div>
+					<div class="feature-box fbox-outline fbox-light fbox-effect" data-animate="fadeIn">
+						<h3>Took every meal under the magnifying glass</h3>
+						<p>Demo text lorem ipsum demo Demo text lorem ipsum demoDemo text lorem ipsum demoDemo text
+							lorem ipsum demoDemo text lorem ipsum demoDemo text lorem ipsum demo</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
 </div>
+{{ end }}

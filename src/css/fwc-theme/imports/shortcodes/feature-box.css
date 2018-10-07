@@ -14,7 +14,7 @@
 .feature-box {
 	position: relative;
 	margin-top: 20px;
-	padding: 0 0 0 80px;
+	padding: 0 0 0 0;
 }
 
 .feature-box:first-child { margin-top: 0; }

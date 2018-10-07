@@ -26,29 +26,24 @@
 			<div class="container clearfix">
 
 				<div class="col_half">
-
 					{{.Params.textCol1}}
-
 				</div>
 
 				<div class="col_half col_last">
-
-					<h3>Our Strategy</h3>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellendus adipisci laborum
-						placeat delectus labore cupiditate deserunt minus numquam consequatur esse, hic at earum illo
-						animi eaque et, dolorem quo qui eos? Quam rerum possimus maxime veniam aut ratione eveniet
-						aliquid cumque aspernatur ipsum libero quaerat, nam. Ad, sunt, error!</p>
-
+					{{.Params.textCol2}}
 				</div>
 
 			</div>
+			{{if .Params.showVideo }}
+			{{partial "video-or-photo-inline" .Params }}
+			{{ end }}
 
-			{{partial "video-or-photo-inline" .}}
+			{{if .Params.showCounter }}
+			{{partial "food-waste-combat-counter" .Params }}
+			{{ end }}
 
-			{{partial "food-waste-combat-counter" . }}
+			{{partial "project-item-text-photo-details" .Params.textPhotoSection }}
 
-			{{partial "project-item-text-photo-details" .}}
 
 			<div class="clear"></div>
 
