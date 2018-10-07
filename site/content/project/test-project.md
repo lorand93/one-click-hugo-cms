@@ -2,10 +2,10 @@
 title: Test project!
 showSlider: true
 sliderImages:
-  - /img/about-direct-sourcing.jpg
-  - /img/about-direct-sourcing.jpg
+  - image: /img/about-direct-sourcing.jpg
+  - image: /img/about-direct-sourcing.jpg
   - /img/about-single-origin.jpg
-useTwoColumns: true
+useTwoColumns: false
 textCol1: >-
   # About About
 
