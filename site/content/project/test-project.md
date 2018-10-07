@@ -1,8 +1,68 @@
 ---
 title: Test project!
 showSlider: true
-textCol1: qweqweqwe
-textCol2: qweqweqwe
+textCol1: |-
+  # About About
+
+  A
+
+
+
+  b
+
+
+
+  c
+
+
+
+  A
+
+
+
+  b
+
+
+
+  c
+
+
+
+  d
+
+  d
+textCol2: |-
+  # About2 About2 
+
+
+
+
+
+  A
+
+
+
+  b
+
+
+
+  c
+
+  A
+
+
+
+  b
+
+
+
+  c
+
+
+
+  d
+
+  d
 showVideo: true
 videoPhoto:
   video: /img/small.mp4
