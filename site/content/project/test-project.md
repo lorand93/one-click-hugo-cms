@@ -4,6 +4,7 @@ showSlider: true
 sliderImages:
   - image: /img/about-direct-sourcing.jpg
   - image: /img/about-direct-sourcing.jpg
+  - /img/about-single-origin.jpg
 useTwoColumns: true
 textCol1: >-
   # About About
@@ -33,7 +34,7 @@ textCol2: >-
   eqw eqwewqdasdasfqwtqegtq we qwer qw eqw eqw eqwewq
 showVideo: true
 videoPhoto:
-  title: test title
+  title: VIdeo Title
   video: /img/small.mp4
 showCounter: true
 counter:
@@ -51,7 +52,8 @@ counter:
     counterValue: '34'
 showTextPhotoSection: true
 textPhotoSection:
-  - sectionImage: /img/about-direct-sourcing.jpg
+  - reverseOrder: false
+    sectionImage: /img/about-direct-sourcing.jpg
     sectionText: |-
       # Test
 
