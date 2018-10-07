@@ -128,5 +128,13 @@ textPhotoSection:
       sheets containing Lorem Ipsum passages, and more recently with desktop
       publishing software like Aldus PageMaker including versions of Lorem
       Ipsum.
+gallery:
+  photos:
+    - image: /img/about-direct-sourcing.jpg
+    - image: /img/about-shade-grown.jpg
+    - image: /img/about-reinvest-profits.jpg
+    - image: /img/blog-chemex.jpg
+    - image: /img/blog-flavor_wheel.jpg
+  title: Galery title!
 ---
 
