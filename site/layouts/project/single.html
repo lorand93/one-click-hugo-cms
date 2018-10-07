@@ -14,9 +14,9 @@
 		</div>
 
 	</section><!-- #page-title end -->
-
-	{{partial "slider-project-photo" .Params }}
-
+	{{if .Params.showSlider}}
+	{{partial "slider-project-photo" .Params.sliderImages }}
+	{{end}}
 	<!-- Content
 	============================================= -->
 	<section id="content">
@@ -26,11 +26,11 @@
 			<div class="container clearfix">
 
 				<div class="col_half">
-					{{.Params.textCol1}}
+					{{.Params.textCol1 | markdownify}}
 				</div>
 
 				<div class="col_half col_last">
-					{{.Params.textCol2}}
+					{{.Params.textCol2 | markdownify}}
 				</div>
 
 			</div>
@@ -39,7 +39,7 @@
 			{{ end }}
 
 			{{if .Params.showCounter }}
-			{{partial "food-waste-combat-counter" .Params }}
+			{{partial "food-waste-combat-counter" .Params.counter }}
 			{{ end }}
 
 			{{partial "project-item-text-photo-details" .Params.textPhotoSection }}

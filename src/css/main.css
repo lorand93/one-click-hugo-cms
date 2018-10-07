@@ -82,3 +82,10 @@
 /*Salspot Theme for Food Waste Combat CSS */
 
 
+.counter-container {
+    display:flex;
+    justify-content: center;
+}
+.counter-wrapper {
+    margin: auto!important;
+}

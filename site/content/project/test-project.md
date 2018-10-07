@@ -1,6 +1,9 @@
 ---
 title: Test project!
 showSlider: true
+sliderImages: 
+  - image: /img/about-direct-sourcing.jpg
+  - image: /img/about-direct-sourcing.jpg
 textCol1: |-
   # About About
 
@@ -66,7 +69,7 @@ textCol2: |-
 showVideo: true
 videoPhoto:
   video: /img/small.mp4
-showCounter: false
+showCounter: true
 counter:
   - counterColor: '#e3f9c4'
     counterText: Hours

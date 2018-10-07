@@ -1,10 +1,7 @@
-test!!!!{{.}}
-
 {{ range .}}
-
 <div class="row nopadding common-height ohidden flex-auto" style="{{ if .reverseOrder }}flex-flow:row-reverse; {{end}}">
 	<div class="col col-padding"
-		 style="background: url('/img/portfolio/extended/thumbs/big.jpg') center center no-repeat; background-size: cover;">
+		 style="background: url('{{.sectionImage}}') center center no-repeat; background-size: cover;">
 		<div>&nbsp;</div>
 	</div>
 	<div class="col col-padding">
@@ -14,9 +11,7 @@ test!!!!{{.}}
 				<div class="col-md-9 nopadding topmargin-sm clearfix">
 
 					<div class="feature-box fbox-outline fbox-light fbox-effect" data-animate="fadeIn">
-						<h3>Took every meal under the magnifying glass</h3>
-						<p>Demo text lorem ipsum demo Demo text lorem ipsum demoDemo text lorem ipsum demoDemo text
-							lorem ipsum demoDemo text lorem ipsum demoDemo text lorem ipsum demo</p>
+						{{.sectionText | markdownify}}
 					</div>
 
 				</div>
