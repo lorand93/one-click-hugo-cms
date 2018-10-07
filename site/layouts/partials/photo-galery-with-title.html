@@ -1,0 +1,24 @@
+{{if .}}
+
+
+<div class="section nomargin">
+	<div class="container clearfix">
+		<div class="heading-block center nomargin">
+			<h3>{{.title}}</h3>
+		</div>
+	</div>
+</div>
+
+<div class="nomargin masonry-thumbs grid-4" data-lightbox="gallery">
+	{{range .photos}}
+
+	<a href="{{.}}" data-lightbox="gallery-item">
+		<img class="image_fade"
+			 src="{{.}}"
+			 alt="Gallery Thumb 4">
+	</a>
+	{{end}}
+
+</div>
+
+{{end}}

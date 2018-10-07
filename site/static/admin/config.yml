@@ -52,11 +52,16 @@ collections: # A list of collections the CMS should be able to edit
             {label: "Section Image", name: "sectionImage", widget: image},
             {label: "Section Details", name: "sectionText", widget: markdown},
             {label: "Reverse order", name: "reverseOrder", widget: boolean, required: false},
-            
             ]}
-
-
-
+            -   label: "Gallery"
+                name: "gallery"
+                widget: "object"
+                required: false
+                fields: [
+                     {label: "Title", name: "title", widget: markdown},
+                     {label: "Photos", name: "photos", widget: list, fields: [
+                        {label: "Image", name: "image", widget: image}
+                ]}]
 
     -   name: "pages"
         label: "Pages"
