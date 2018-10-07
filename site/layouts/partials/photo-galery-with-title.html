@@ -1,6 +1,6 @@
+{{.photos}}
+
 {{if .}}
-
-
 <div class="section nomargin">
 	<div class="container clearfix">
 		<div class="heading-block center nomargin">
@@ -12,9 +12,9 @@
 <div class="nomargin masonry-thumbs grid-4" data-lightbox="gallery">
 	{{range .photos}}
 
-	<a href="{{.}}" data-lightbox="gallery-item">
+	<a href="{{.image}}" data-lightbox="gallery-item">
 		<img class="image_fade"
-			 src="{{.}}"
+			 src="{{.image}}"
 			 alt="Gallery Thumb 4">
 	</a>
 	{{end}}
