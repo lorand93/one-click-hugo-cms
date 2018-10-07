@@ -1,5 +1,5 @@
 ---
-title: A beginners’ guide to brewing with Lorand
+title: Test project!
 text-col-1: asdasd
 text-col-2: qweqweqwe
 ---
