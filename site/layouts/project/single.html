@@ -25,7 +25,7 @@
 
 			<div class="container clearfix">
 
-				<div class="{{if .Params.useTwoColumns }} col_half {{else}} col {{end}}">
+				<div class="{{if .Params.useTwoColumns }} col_half {{else}} col mw-100{{end}}">
 					{{.Params.textCol1 | markdownify}}
 				</div>
 				{{if .Params.useTwoColumns }}
