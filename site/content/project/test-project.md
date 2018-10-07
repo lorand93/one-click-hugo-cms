@@ -135,6 +135,8 @@ gallery:
     - image: /img/about-reinvest-profits.jpg
     - image: /img/blog-chemex.jpg
     - image: /img/blog-flavor_wheel.jpg
+    - image: /img/products-grid1.jpg
+    - image: /img/0-weu-d2-13b254c519c9949ffd2790e5cdab70fe.jpg
   title: Galery title!
 ---
 
