@@ -35,7 +35,7 @@ textCol2: >-
 showVideo: true
 videoPhoto:
   title: VIdeo Title
-  video: /img/small.mp4
+  video: /img/explore.mp4
 showCounter: true
 counter:
   - counterColor: '#e3f9c4'
