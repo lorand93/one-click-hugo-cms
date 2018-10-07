@@ -1,8 +1,6 @@
 ---
 title: A beginners’ guide to brewing with Lorand
-description: >-
-  Brewing with a Chemex probably seems like a complicated, time-consuming
-  ordeal, but once you get used to the process, it becomes a soothing ritual
-  that's worth the effort every time.
+text-col-1: asdasd
+text-col-2: qweqweqwe
 ---
 
