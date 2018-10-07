@@ -34,14 +34,14 @@ collections: # A list of collections the CMS should be able to edit
             - {label: "Text Column 2", name: "textCol2", widget: markdown}
         
         
-            - {label: "Representative Video/Photo", name: "video-photo", required: false, widget: "object", fields: [
-            {label: "video", name: "event-video", widget: image},
-            {label: "photo", name: "event-photo", widget: image}
+            - {label: "Representative Video/Photo", name: "videoPhoto", required: false, widget: "object", fields: [
+            {label: "video", name: "eventVideo", widget: image},
+            {label: "photo", name: "eventPhoto", widget: image}
             ]}
-            - {label: "Show Counter", name: "show-counter", widget: boolean, required: false}
+            - {label: "Show Counter", name: "showCounter", widget: boolean, required: false}
             - {label: "Counter", name: "counter", widget: "list", required: false, fields: [
-            {label: "counter-text", name: "counter-1-text", widget: string},
-            {label: "counter-value", name: "counter-1-value", widget: string},
+            {label: "Counter text", name: "counterText", widget: string},
+            {label: "Counter number", name: "counterValue", widget: string},
             ]}
     
     
