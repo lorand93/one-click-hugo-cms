@@ -4,7 +4,7 @@ showSlider: true
 sliderImages:
   - image: /img/about-direct-sourcing.jpg
   - image: /img/about-direct-sourcing.jpg
-useTwoColumns: true
+useTwoColumns: false
 textCol1: >-
   # About About
 
