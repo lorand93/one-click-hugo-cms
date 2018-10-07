@@ -1,6 +1,6 @@
 ---
 title: Test project!
-textCol1: esasdasda
-textCol2: teastar
+textCol1: qweqweqwe
+textCol2: qweqweqwe
 ---
 
