@@ -25,14 +25,14 @@
 
 			<div class="container clearfix">
 
-				<div class="col_half">
+				<div class="{{if .Params.useTwoColumns }} col_half {{else}} col {{end}}">
 					{{.Params.textCol1 | markdownify}}
 				</div>
-
+				{{if .Params.useTwoColumns }}
 				<div class="col_half col_last">
 					{{.Params.textCol2 | markdownify}}
 				</div>
-
+				{{end}}
 			</div>
 			{{if .Params.showVideo }}
 			{{partial "video-or-photo-inline" .Params.videoPhoto }}
