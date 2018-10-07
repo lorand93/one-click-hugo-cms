@@ -2,7 +2,7 @@
 title: Test project!
 showSlider: true
 sliderImages:
-  - ''
+  - /img/about-sustainable-farming.jpg
   - /img/about-single-origin.jpg
 useTwoColumns: false
 textCol1: >-
