@@ -1,75 +1,40 @@
 ---
 title: Test project!
 showSlider: true
-sliderImages: 
+sliderImages:
   - image: /img/about-direct-sourcing.jpg
   - image: /img/about-direct-sourcing.jpg
-textCol1: |-
+useTwoColumns: true
+textCol1: >-
   # About About
 
-  A
+
+  dasdasfqwtqegtq we qwer qw eqw eqw eqwewqdasdasfqwtqegtq we qwer qw eqw eqw
+  eqwewqdasdasfqwtqegtq we qwer qw eqw eqw eqwewqdasdasfqwtqegtq we qwer qw eqw
+  eqw eqwewqdasdasfqwtqegtq we qwer qw eqw eqw eqwewqdasdasfqwtqegtq we qwer qw
+  eqw eqw eqwewqdasdasfqwtqegtq we qwer qw eqw eqw eqwewqdasdasfqwtqegtq we qwer
+  qw eqw eqw eqwewqdasdasfqwtqegtq we qwer qw eqw eqw eqwewqdasdasfqwtqegtq we
+  qwer qw eqw eqw eqwewqdasdasfqwtqegtq we qwer qw eqw eqw eqwewqdasdasfqwtqegtq
+  we qwer qw eqw eqw eqwewqdasdasfqwtqegtq we qwer qw eqw eqw
+  eqwewqdasdasfqwtqegtq we qwer qw eqw eqw eqwewqdasdasfqwtqegtq we qwer qw eqw
+  eqw eqwewqdasdasfqwtqegtq we qwer qw eqw eqw eqwewq
+textCol2: >-
+  # About2 About2
 
 
-
-  b
-
-
-
-  c
-
-
-
-  A
-
-
-
-  b
-
-
-
-  c
-
-
-
-  d
-
-  d
-textCol2: |-
-  # About2 About2 
-
-
-
-
-
-  A
-
-
-
-  b
-
-
-
-  c
-
-  A
-
-
-
-  b
-
-
-
-  c
-
-
-
-  d
-
-  d
+  dasdasfqwtqegtq we qwer qw eqw eqw eqwewqdasdasfqwtqegtq we qwer qw eqw eqw
+  eqwewqdasdasfqwtqegtq we qwer qw eqw eqw eqwewqdasdasfqwtqegtq we qwer qw eqw
+  eqw eqwewqdasdasfqwtqegtq we qwer qw eqw eqw eqwewqdasdasfqwtqegtq we qwer qw
+  eqw eqw eqwewqdasdasfqwtqegtq we qwer qw eqw eqw eqwewqdasdasfqwtqegtq we qwer
+  qw eqw eqw eqwewqdasdasfqwtqegtq we qwer qw eqw eqw eqwewqdasdasfqwtqegtq we
+  qwer qw eqw eqw eqwewqdasdasfqwtqegtq we qwer qw eqw eqw eqwewqdasdasfqwtqegtq
+  we qwer qw eqw eqw eqwewqdasdasfqwtqegtq we qwer qw eqw eqw
+  eqwewqdasdasfqwtqegtq we qwer qw eqw eqw eqwewqdasdasfqwtqegtq we qwer qw eqw
+  eqw eqwewqdasdasfqwtqegtq we qwer qw eqw eqw eqwewq
 showVideo: true
 videoPhoto:
-  video: /img/small.mp4
   title: test title
+  video: /img/small.mp4
 showCounter: true
 counter:
   - counterColor: '#e3f9c4'
