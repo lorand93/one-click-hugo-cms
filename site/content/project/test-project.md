@@ -15,6 +15,9 @@ counter:
   - counterColor: '#aa7942'
     counterText: Kilograms of Food
     counterValue: '100'
+  - counterColor: '#b87668'
+    counterText: persons
+    counterValue: '34'
 showTextPhotoSection: true
 textPhotoSection:
   - sectionImage: /img/about-direct-sourcing.jpg
