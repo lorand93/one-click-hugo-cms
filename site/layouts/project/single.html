@@ -71,12 +71,15 @@
 					<p>Take some time sharing this project for the well being of its development.</p>
 					<div class="si-share clearfix">
 						<span>Share:</span>
+
 						<div>
-							<a href="#" class="social-icon si-borderless si-facebook">
+							<a href="http://www.facebook.com/sharer.php?u={{.Permalink}}"
+							   class="social-icon si-borderless si-facebook">
 								<i class="icon-facebook"></i>
 								<i class="icon-facebook"></i>
 							</a>
-							<a href="#" class="social-icon si-borderless si-twitter">
+							<a href="http://twitter.com/share?url={{.Permalink}}&text={{ .Title }}&via={{with .Site.Social.twitter }}{{ . }}{{ end }}"
+							   class="social-icon si-borderless si-twitter">
 								<i class="icon-twitter"></i>
 								<i class="icon-twitter"></i>
 							</a>
@@ -88,7 +91,8 @@
 								<i class="icon-gplus"></i>
 								<i class="icon-gplus"></i>
 							</a>
-							<a href="#" class="social-icon si-borderless si-email3">
+							<a href="mailto:?subject=Check%20out%20{{ .Title }}&body={{.Permalink}}"
+							   class="social-icon si-borderless si-email3">
 								<i class="icon-email3"></i>
 								<i class="icon-email3"></i>
 							</a>
