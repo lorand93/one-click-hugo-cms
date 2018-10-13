@@ -74,6 +74,8 @@
 
 /*Salspot Theme for Food Waste Combat CSS */
 
+
+/*------Project Page Components--------*/
 .counter-container {
     display: flex !important;
     justify-content: center;
@@ -97,4 +99,73 @@
 
 .intro-section {
     margin: 0 0 60px;
+}
+
+.cover-image {
+    padding: 15%;
+}
+
+
+/*Home Components*/
+
+audience-card {}
+
+.audience-card .inner-content .btn {
+    color: #ec434b;
+    position: relative;
+    z-index: 100
+}
+
+.audience-card .inner-content .btn:hover {
+    background: #ec434b;
+    color: #FFF
+}
+
+.audience-card:nth-of-type(4n+1) .inner-content {
+    background: #f9c46c;
+}
+
+.audience-card:nth-of-type(4n+2) .inner-content {
+    background: #77c1b8
+}
+
+.audience-card:nth-of-type(4n+3) .inner-content {
+    background: #1c3557
+}
+
+.audience-card:nth-of-type(4n+4) .inner-content {
+    background: #ec434b
+}
+
+.inner-content {
+    max-width: 400px;
+    /*height: 300px;*/
+    padding: 40px;
+    margin: auto auto 30px auto;
+    -webkit-box-shadow: 0 5px 34px 7px rgba(0, 0, 0, .15);
+    -moz-box-shadow: 0 5px 34px 7px rgba(0, 0, 0, .15);
+    box-shadow: 0 5px 34px 7px rgba(0, 0, 0, .15);
+}
+
+.inner-content h3 {
+    margin-bottom: 0;
+    color: white;
+    font-size: 2.7rem;
+}
+
+.card-image-wrapper {
+    height: 125px;
+    width: auto;
+}
+
+.card-image {
+    max-width: 100%;
+    max-height: 100%
+}
+
+.over-top-margin {
+    margin-top: -10%;
+}
+
+.project-cards-section {
 }

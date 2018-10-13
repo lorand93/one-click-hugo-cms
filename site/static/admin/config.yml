@@ -78,9 +78,22 @@ collections: # A list of collections the CMS should be able to edit
                     - {label: Title, name: title, widget: string}
                     - {label: Subtitle, name: subtitle, widget: string}
                     - {label: Image, name: image, widget: image}
+                    - {label: "Project Cards", name: "project_cards", widget: object, required:false, fields: [
+                        {label: "Projects", name: "projects", widget: list, fields: [
+                            {label: "Project Title", name: "project_title", widget: text},
+                            {label: "Project Description", name: "project_description", widget: text},
+                            {label: "Project Icon", name: "project_icon", widget: file},
+                    ]}
+                    
+                    ]}
+                    
+                    
                     - {label: "Blurb", name: blurb, widget: object, fields: [
                     {label: "Heading", name: "heading", widget: string},
                     {label: "Text", name: "text", widget: "text"}]}
+                    
+                    
+                    
                     - {label: "Intro", name: intro, widget: object, fields: [
                     {label: "Heading", name: "heading", widget: string},
                     {label: "Text", name: "text", widget: "text"}]}

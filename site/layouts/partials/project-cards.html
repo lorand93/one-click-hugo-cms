@@ -1,0 +1,21 @@
+<div class="card-image over-top-margin">
+	<div class="container body-container">
+
+		<div class="row first-section">
+			{{range .projects}}
+			<div class="col-sm-6 col-lg-4 audience-card">
+				<div class="inner-content">
+					<div class="card-image-wrapper">
+						<img class="card-image" src="{{.card_icon}}"/>
+					</div>
+					<h3 class="card-title">{{.card_title}}</h3>
+					<p class="card-description">{{.card_description}}</p>
+				</div>
+			</div>
+
+			{{end}}}
+
+		</div>
+
+	</div>
+</div>
