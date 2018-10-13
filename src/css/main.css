@@ -113,7 +113,7 @@ audience-card {
 .audience-card .inner-content .btn {
     color: #ec434b;
     position: relative;
-    z-index: 100
+    z-index: 50
 }
 
 .audience-card .inner-content .btn:hover {
@@ -138,24 +138,52 @@ audience-card {
 }
 
 .inner-content {
-    max-width: 400px;
-    /*height: 300px;*/
     padding: 40px;
+    height: 350px;
+    max-width: 340px;
     margin: auto auto 30px auto;
     -webkit-box-shadow: 0 5px 34px 7px rgba(0, 0, 0, .15);
     -moz-box-shadow: 0 5px 34px 7px rgba(0, 0, 0, .15);
     box-shadow: 0 5px 34px 7px rgba(0, 0, 0, .15);
     text-align: center;
+    transition: all .3s ease ; /* Animation */
+}
+
+.inner-content:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    z-index: 100;
+    position: absolute;
+    box-shadow: 0 5px 34px 7px rgba(0,0,0,.25);
+    padding: 30px 55px;
+    background: #FFF;
+    top: -30px;
+    bottom: 0;
+    left: -15px;
+    right: -15px;
+}
+
+.project-card-description {
+    display:none;
+}
+
+.inner-content:hover .project-card-description{
+    display:block;
+}
+
+.inner-content:hover .card-image-wrapper{
+    height:100px;
 }
 
 .card-image-wrapper {
     height: 125px;
     width: auto;
+    transition: all .3s ease ; /* Animation */
 }
 
 .project-card-image {
     max-width: 100%;
-    max-height: 100%
+    max-height: 100%;
+    transition: all .3s ease ; /* Animation */
 }
 
 .over-top-margin {
@@ -168,8 +196,8 @@ audience-card {
 .project-card-title {
     color: white;
     font-size: 1.4rem;
-    margin-bottom: 0;
     font-weight: bolder;
+    margin: 10px 0;
 }
 
 .projects-container {
