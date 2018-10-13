@@ -5,6 +5,12 @@ sliderImages:
   - /img/about-sustainable-farming.jpg
   - /img/about-single-origin.jpg
   - /img/about-shade-grown.jpg
+intro_section:
+  textCol1: >-
+    Test textTest textTest textTest textTest textTest textTest textTest textTest
+    textTest textTest textTest textTest textTest textTest textTest textTest
+    textTest textTest text
+  useTwoColumns: false
 showVideo: false
 videoPhoto:
   title: VIdeo Title
