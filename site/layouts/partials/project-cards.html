@@ -1,15 +1,14 @@
 <div class="card-image over-top-margin">
-	<div class="container body-container">
-
+	<div class="container body-container projects-container">
 		<div class="row first-section">
-			{{range .projects}}
+			{{range .project_cards.projects}}
 			<div class="col-sm-6 col-lg-4 audience-card">
 				<div class="inner-content">
 					<div class="card-image-wrapper">
-						<img class="card-image" src="{{.card_icon}}"/>
+						<img class="project-card-image" src="{{.project_icon}}"/>
 					</div>
-					<h3 class="card-title">{{.card_title}}</h3>
-					<p class="card-description">{{.card_description}}</p>
+					<h3 class="project-card-title">{{.project_title}}</h3>
+					<p class="card-description">{{.project_description}}</p>
 				</div>
 			</div>
 
