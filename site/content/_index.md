@@ -5,9 +5,11 @@ image: /img/home-jumbotron.jpg
 project_cards:
   projects:
     - project_description: Banca de alimente este un proiect realizate de Food Waste Combat
-      project_icon: /img/blank.svg
+      project_icon: /img/groceries.svg
       project_title: Banca de alimente
-    - {}
+    - project_description: Banca de alimente este un proiect realizate de Food Waste Combat
+      project_icon: /img/groceries.svg
+      project_title: Demo Project
 blurb:
   heading: Why Kaldi?
   text: >-
