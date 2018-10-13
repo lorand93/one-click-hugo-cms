@@ -25,7 +25,12 @@ project_cards:
     - project_description: Personal person
       project_icon: /img/groceries.svg
       project_title: Your personal grasshopper
-    - {}
+    - project_description: Rock n Roll for your metal project
+      project_icon: /img/groceries.svg
+      project_title: Rock your project
+    - project_description: 'Best of '
+      project_icon: /img/groceries.svg
+      project_title: Old School Shivers
 blurb:
   heading: Why Kaldi?
   text: >-
