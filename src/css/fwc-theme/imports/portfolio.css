@@ -1107,10 +1107,12 @@ body.device-touch.device-xs .portfolio-notitle .portfolio-overlay { display: non
 
 .masonry-thumbs.grid-6 a { width: 16.60%; }
 
-.masonry-thumbs a,
+.masonry-thumbs a {
+	height:225px;
+
+}
 .masonry-thumbs img {
 	display: block;
-	height: auto !important;
 }
 
 .masonry-thumbs img {

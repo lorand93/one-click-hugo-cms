@@ -1,4 +1,3 @@
-
 /*
  *
  *    TABLE OF CONTENTS
@@ -14,11 +13,8 @@
  *       - Debug children
  *
  */
-
-
 /* External Library Includes */
 @import './imports/_reset';
-
 /* Modules */
 @import './imports/_box-sizing';
 @import './imports/_images';
@@ -64,13 +60,11 @@
 @import './imports/_buttons';
 @import './imports/_svg';
 @import './imports/_cms';
-
 /* Variables */
 /* Importing here will allow you to override any variables in the modules */
 @import './imports/_colors';
 @import './imports/_media-queries';
 @import './imports/_variables';
-
 /* Debugging */
 @import './imports/_debug-children';
 @import './imports/_debug-grid';
@@ -78,14 +72,18 @@
 /* Uncomment out the line below to help debug layout issues */
 /*@import './imports/_debug';*/
 
-
 /*Salspot Theme for Food Waste Combat CSS */
 
-
 .counter-container {
-    display:flex!important;
+    display: flex !important;
     justify-content: center;
+    width: 80% !important;
 }
+
 .counter-wrapper {
-    margin: auto!important;
+    margin: auto !important;
+}
+
+.counter-section {
+    padding: 20px 0 !important;
 }

@@ -7,16 +7,15 @@
 	</div>
 </div>
 
-<div class="nomargin masonry-thumbs grid-4" data-lightbox="gallery">
+<div class="masonry-thumbs grid-5" data-lightbox="gallery">
+
 	{{range .photos}}
-
-	<a href="{{.image}}" data-lightbox="gallery-item">
-		<img class="image_fade"
-			 src="{{.image}}"
-			 alt="Gallery Thumb 4">
+	<a href="{{.image}}" data-lightbox="gallery-item"
+	   style="background-image:url('{{.image}}'); background-size: cover;"
+	>
 	</a>
-	{{end}}
 
+	{{end}}
 </div>
 
 {{end}}

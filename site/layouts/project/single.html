@@ -38,7 +38,7 @@
 			{{partial "video-or-photo-inline" .Params.videoPhoto }}
 			{{ end }}
 
-			{{if .Params.showCounter }}
+			{{if .Params.counter.showCounter }}
 			{{partial "food-waste-combat-counter" .Params.counter }}
 			{{ end }}
 
@@ -50,57 +50,7 @@
 			{{partial "photo-galery-with-title" .Params.gallery}}
 			<div class="clear"></div>
 
-			<div class="container topmargin-lg clearfix">
 
-				<div class="col_one_third">
-					<h4>Case Study</h4>
-					<p>Expedita similique fuga quae voluptatibus molestiae amet rem, veniam nihil, magni quo odit
-						ducimus ipsum suscipit ea aliquid alias cumque. Lorem ipsum dolor sit amet, consectetur
-						adipisicing elit. Pariatur modi eos maiores.</p>
-				</div>
-
-				<div class="col_one_third">
-					<h4>Author Experience</h4>
-					<p>Hic corporis modi tempora eligendi ipsa, odit voluptatum cupiditate perferendis architecto
-						repellat odio nam. Quas nesciunt voluptate, incidunt id dolorum corporis deleniti, sapiente a
-						ipsam molestias accusantium.</p>
-				</div>
-
-				<div class="col_one_third col_last">
-					<h4>Like this Project?</h4>
-					<p>Take some time sharing this project for the well being of its development.</p>
-					<div class="si-share clearfix">
-						<span>Share:</span>
-
-						<div>
-							<a href="http://www.facebook.com/sharer.php?u={{.Permalink}}"
-							   class="social-icon si-borderless si-facebook">
-								<i class="icon-facebook"></i>
-								<i class="icon-facebook"></i>
-							</a>
-							<a href="http://twitter.com/share?url={{.Permalink}}&text={{ .Title }}&via={{with .Site.Social.twitter }}{{ . }}{{ end }}"
-							   class="social-icon si-borderless si-twitter">
-								<i class="icon-twitter"></i>
-								<i class="icon-twitter"></i>
-							</a>
-							<a href="#" class="social-icon si-borderless si-pinterest">
-								<i class="icon-pinterest"></i>
-								<i class="icon-pinterest"></i>
-							</a>
-							<a href="#" class="social-icon si-borderless si-gplus">
-								<i class="icon-gplus"></i>
-								<i class="icon-gplus"></i>
-							</a>
-							<a href="mailto:?subject=Check%20out%20{{ .Title }}&body={{.Permalink}}"
-							   class="social-icon si-borderless si-email3">
-								<i class="icon-email3"></i>
-								<i class="icon-email3"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-
-			</div>
 
 		</div>
 
