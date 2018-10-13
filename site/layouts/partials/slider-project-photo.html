@@ -1,8 +1,10 @@
 <section id="slider" class="slider-element slider-parallax swiper_wrapper clearfix" style="height: 600px;">
 	<div class="swiper-container swiper-parent">
 		<div class="swiper-wrapper">
-			{{range .}}
-			<div class="swiper-slide" style="background-image: url('{{.}}');"></div>
+			{{range .sliderImages}}
+			<div class="swiper-slide" style="background-image: url('{{.}}');">
+				<h1 class="slider-title">{{$.title}}</h1>
+			</div>
 			{{end}}
 		</div>
 		<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>

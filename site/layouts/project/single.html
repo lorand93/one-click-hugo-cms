@@ -5,18 +5,17 @@
 ============================================= -->
 <div class="clearfix">
 
-	<!-- Page Title
-	============================================= -->
-	<section id="page-title">
-
-		<div class="container clearfix">
-			<h1>{{ .Params.title}}</h1>
-		</div>
-
-	</section><!-- #page-title end -->
 	{{if .Params.showSlider}}
-	{{partial "slider-project-photo" .Params.sliderImages }}
+	{{partial "slider-project-photo" (dict "sliderImages" .Params.sliderImages "title" .Params.title)}}
 	{{end}}
+
+
+	<!--COUNTER SECTION-->
+	{{if .Params.counter.showCounter }}
+	{{partial "food-waste-combat-counter" .Params.counter }}
+	{{ end }}
+	<!--END COUNTER SECTION-->
+
 	<!-- Content
 	============================================= -->
 	<section id="content">
@@ -38,9 +37,6 @@
 			{{partial "video-or-photo-inline" .Params.videoPhoto }}
 			{{ end }}
 
-			{{if .Params.counter.showCounter }}
-			{{partial "food-waste-combat-counter" .Params.counter }}
-			{{ end }}
 
 			{{partial "project-item-text-photo-details" .Params.textPhotoSection }}
 
@@ -49,8 +45,6 @@
 
 			{{partial "photo-galery-with-title" .Params.gallery}}
 			<div class="clear"></div>
-
-
 
 		</div>
 

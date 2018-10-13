@@ -40,13 +40,16 @@ collections: # A list of collections the CMS should be able to edit
             {label: "Title", name: "title", widget: markdown},
             {label: "Representative Video to run in background: format should be .mp4", name: "video", widget: file}
             ]}
-            
-            - {label: "Show Counter", name: "showCounter", widget: boolean, required: false}
-            - {label: "Counter", name: "counter", widget: "list", required: false, fields: [
-            {label: "Counter text", name: "counterText", widget: string},
-            {label: "Counter number", name: "counterValue", widget: string},
-            {label: "Counter Color", name: "counterColor", widget: color},
+            - {label: "Counter Section", name: "counter", widget: object, required: false, fields: [
+                {label: "Show Counter", name: "showCounter", widget: boolean, required: false},
+                {label: "Counter Background Color", name: "counter_background_color", widget: color, required: false},
+                {label: "Counter", name: "counter_elements", widget: "list", required: false, fields: [
+                {label: "Counter text", name: "counterText", widget: string},
+                {label: "Counter number", name: "counterValue", widget: string},
+                {label: "Counter Color", name: "counterColor", widget: color},
+                ]}
             ]}
+           
 
             - {label: "Show Text Photo Section", name: "showTextPhotoSection", widget: boolean, required: false}
             - {label: "Text Photo Section", name: "textPhotoSection", widget: "list", required: false, fields: [

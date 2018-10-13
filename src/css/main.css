@@ -87,3 +87,10 @@
 .counter-section {
     padding: 20px 0 !important;
 }
+
+.slider-title {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color:white;
+}
