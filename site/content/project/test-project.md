@@ -64,7 +64,7 @@ textCol2: >-
   the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
   and more recently with desktop publishing software like Aldus PageMaker
   including versions of Lorem Ipsum.
-showVideo: true
+showVideo: false
 videoPhoto:
   title: VIdeo Title
   video: /img/explore.mp4
@@ -99,6 +99,11 @@ textPhotoSection:
       sheets containing Lorem Ipsum passages, and more recently with desktop
       publishing software like Aldus PageMaker including versions of Lorem
       Ipsum.
+
+
+
+
+      [This is a link](www.google.com)
   - reverseOrder: true
     sectionImage: /img/about-single-origin.jpg
     sectionText: >-
