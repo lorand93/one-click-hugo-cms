@@ -18,18 +18,20 @@
 
 	<!-- Content
 	============================================= -->
+	{{if .Params.intro_section.textCol1}}
+
 	<section id="content">
 
 		<div class="content-wrap">
 
 			<div class="container clearfix">
 
-				<div class="{{if .Params.useTwoColumns }} col_half {{else}} col mw-100{{end}}">
-					{{.Params.textCol1 | markdownify}}
+				<div class="{{if .Params.intro_section.useTwoColumns }} col_half {{else}} col mw-100{{end}}">
+						{{.Params.intro_section.text_col1 | markdownify}}
 				</div>
 				{{if .Params.useTwoColumns }}
 				<div class="col_half col_last">
-					{{.Params.textCol2 | markdownify}}
+					{{.Params.intro_section.text_col2 | markdownify}}
 				</div>
 				{{end}}
 			</div>
@@ -49,6 +51,7 @@
 		</div>
 
 	</section><!-- #content end -->
+	{{end}}
 
 </div><!-- #wrapper end -->
 

@@ -31,10 +31,11 @@ collections: # A list of collections the CMS should be able to edit
                 widget: "list"
                 required: false
                 field: {label: Image, name: image, widget: image}
-            - {label: "Use Two Columns", name: "useTwoColumns", widget: boolean, required: false}
-            - {label: "Text Column 1", name: "textCol1", widget: markdown}
-            - {label: "Text Column 2", name: "textCol2", widget: markdown}
-
+            - {label: "Introduction Section", name: "intro_section", required: false, widget: "object", fields: [
+                {label: "Use Two Columns", name: "useTwoColumns", widget: boolean, required: false},
+                {label: "Text Column 1", name: "textCol1", widget: markdown},
+                {label: "Text Column 2", name: "textCol2", widget: markdown},
+                ]}
             - {label: "Show Video", name: "showVideo", widget: boolean, required: false}
             - {label: "Representative Video/Photo", name: "videoPhoto", required: false, widget: "object", fields: [
             {label: "Title", name: "title", widget: markdown},
