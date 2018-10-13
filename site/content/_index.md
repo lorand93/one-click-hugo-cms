@@ -10,6 +10,22 @@ project_cards:
     - project_description: Banca de alimente este un proiect realizate de Food Waste Combat
       project_icon: /img/groceries.svg
       project_title: Demo Project
+    - project_description: Scoala este un proiect food waste combat
+      project_icon: /img/groceries.svg
+      project_title: 'Scoala '
+    - project_description: Demo Apple Invoice Ids
+      project_icon: /img/groceries.svg
+      project_title: Lorand Project
+    - project_description: Testing purpose
+      project_icon: /img/groceries.svg
+      project_title: Demo Project Name
+    - project_description: Testing third party tomatoes
+      project_icon: /img/groceries.svg
+      project_title: Les Testables
+    - project_description: Personal person
+      project_icon: /img/groceries.svg
+      project_title: Your personal grasshopper
+    - {}
 blurb:
   heading: Why Kaldi?
   text: >-
