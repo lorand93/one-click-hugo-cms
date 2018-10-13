@@ -68,23 +68,22 @@ showVideo: false
 videoPhoto:
   title: VIdeo Title
   video: /img/explore.mp4
-
 counter:
-    showCounter: true
-    counter_background_color: '222'
-    counter_elements:
-      - counterColor: '#e3f9f4'
-        counterText: Hours
-        counterValue: '50'
-      - counterColor: '#615eff'
-        counterText: Energy
-        counterValue: '1000'
-      - counterColor: '#aa7942'
-        counterText: Kilograms of Food
-        counterValue: '100'
-      - counterColor: '#b87668'
-        counterText: persons
-        counterValue: '34'
+  counter_background_color: '#942192'
+  counter_elements:
+    - counterColor: '#e3f9f4'
+      counterText: Hours
+      counterValue: '50'
+    - counterColor: '#615eff'
+      counterText: Energy
+      counterValue: '1000'
+    - counterColor: '#aa7942'
+      counterText: Kilograms of Food
+      counterValue: '100'
+    - counterColor: '#b87668'
+      counterText: persons
+      counterValue: '34'
+  showCounter: true
 showTextPhotoSection: true
 textPhotoSection:
   - reverseOrder: false
