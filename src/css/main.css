@@ -92,5 +92,9 @@
     position: absolute;
     bottom: 10%;
     left: 10%;
-    color:white;
+    color: white;
+}
+
+.intro-section {
+    margin: 0 0 60px;
 }
