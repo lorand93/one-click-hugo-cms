@@ -201,10 +201,11 @@ audience-card {
 }
 
 .over-top-margin {
-    margin-top: -10%;
+    margin-top: -15%;
 }
 
-.project-cards-section {
+.project-card-section {
+    background-color: #ececed;
 }
 
 .project-card-title {
