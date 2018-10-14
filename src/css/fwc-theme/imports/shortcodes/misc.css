@@ -315,7 +315,7 @@ blockquote.pull-right {
 	float: right;
 	padding: 5px;
 	border-left: 1px solid #EEE;
-	border-right: 1px solid #EEE;
+	/*border-right: 1px solid #EEE;*/
 }
 
 .top-advert a,
