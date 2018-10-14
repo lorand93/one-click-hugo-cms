@@ -16,7 +16,7 @@ videoPhoto:
   title: VIdeo Title
   video: /img/explore.mp4
 counter:
-  counter_background_color: '#942192'
+  counter_background_color: '#151044'
   counter_elements:
     - counterColor: '#e3f9f4'
       counterText: Hours
