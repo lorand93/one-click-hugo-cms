@@ -89,6 +89,11 @@ collections: # A list of collections the CMS should be able to edit
                     ]}
                     
                     ]}
+                    - {label: "Text Photo Section", name: "textPhotoSection", widget: "list", required: false, fields: [
+                    {label: "Section Image", name: "sectionImage", widget: image},
+                    {label: "Section Details", name: "sectionText", widget: markdown},
+                    {label: "Reverse order", name: "reverseOrder", widget: boolean, required: false},
+                    ]}
                     
                     
                     - {label: "Blurb", name: blurb, widget: object, fields: [
