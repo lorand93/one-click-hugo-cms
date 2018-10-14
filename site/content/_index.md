@@ -7,12 +7,15 @@ project_cards:
     - project_description: Banca de alimente este un proiect realizate de Food Waste Combat
       project_icon: /img/groceries.svg
       project_title: Banca de alimente
+      background_color: '#ec434b'
     - project_description: Banca de alimente este un proiect realizate de Food Waste Combat
       project_icon: /img/groceries.svg
       project_title: Demo Project
+      background_color: '#ec434b'
     - project_description: Scoala este un proiect food waste combat
       project_icon: /img/groceries.svg
-      project_title: 'Scoala '
+      project_title: 'Scoala'
+      background_color: '#ec434b'
     - project_description: Demo Apple Invoice Ids
       project_icon: /img/groceries.svg
       project_title: Lorand Project

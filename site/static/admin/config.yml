@@ -83,6 +83,7 @@ collections: # A list of collections the CMS should be able to edit
                             {label: "Project Title", name: "project_title", widget: text},
                             {label: "Project Description", name: "project_description", widget: text},
                             {label: "Project Icon", name: "project_icon", widget: file},
+                            {label: "Background Color", name: "background_color", widget: color},
                     ]}
                     
                     ]}
