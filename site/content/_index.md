@@ -8,32 +8,50 @@ project_cards:
       project_icon: /img/groceries.svg
       project_title: Banca de alimente
       background_color: '#ec434b'
+      button_text: Learn more
+      button_url: https://google.com
     - project_description: Banca de alimente este un proiect realizate de Food Waste Combat
       project_icon: /img/groceries.svg
       project_title: Demo Project
       background_color: '#ec434b'
+      button_text: Learn more
+      button_url: https://google.com
     - project_description: Scoala este un proiect food waste combat
       project_icon: /img/groceries.svg
       project_title: 'Scoala'
       background_color: '#ec434b'
+      button_text: Learn more
+      button_url: https://google.com
     - project_description: Demo Apple Invoice Ids
       project_icon: /img/groceries.svg
       project_title: Lorand Project
+      button_text: Learn more
+      button_url: https://google.com
     - project_description: Testing purpose
       project_icon: /img/groceries.svg
       project_title: Demo Project Name
+      button_text: Learn more
+      button_url: https://google.com
     - project_description: Testing third party tomatoes
       project_icon: /img/groceries.svg
       project_title: Les Testables
+      button_text: Learn more
+      button_url: https://google.com
     - project_description: Personal person
       project_icon: /img/groceries.svg
       project_title: Your personal grasshopper
+      button_text: Learn more
+      button_url: https://google.com
     - project_description: Rock n Roll for your metal project
       project_icon: /img/groceries.svg
       project_title: Rock your project
+      button_text: Learn more
+      button_url: https://google.com
     - project_description: 'Best of '
       project_icon: /img/groceries.svg
       project_title: Old School Shivers
+      button_text: Learn more
+      button_url: https://google.com
 blurb:
   heading: Why Kaldi?
   text: >-
